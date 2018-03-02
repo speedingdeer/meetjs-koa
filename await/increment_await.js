@@ -35,7 +35,9 @@ const increment = require('./increment');
 (async () => {
   try {
     let result = 0;
-    result = await increment(await increment(await increment(await increment(await increment(await increment(await increment(await increment(await increment(await increment(result))))))))));
+    for(let i = 0; i < 10; i++) {
+      result = await increment(result)
+    }
     console.log(`10 = ${result}`)
   } catch(e) {
     console.error(e)
