@@ -1,3 +1,4 @@
+/*
 module.exports = (a, b, op) => {
  return new Promise((resolve, reject) => {
     switch(op.trim()) {
@@ -7,4 +8,14 @@ module.exports = (a, b, op) => {
       case '*': resolve(a * b); break;
     }
   });
+}
+*/
+
+module.exports = async (a, b, op) => {
+  switch(op.trim()) {
+    case '+': return a + b;
+    case '-': return a - b;
+    case '/': return a / b;
+    case '*': return a * b;
+  }
 }

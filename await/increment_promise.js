@@ -23,7 +23,7 @@ const increment = require('./increment');
     .then(increment) // 9
     .then(increment) // 10
     .then(result => {
-      console.log(`1 = ${result}`)
+      console.log(`10 = ${result}`)
     })
     .catch(e => {
       console.error(e)
